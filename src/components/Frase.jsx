@@ -1,18 +1,18 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 
-const Frase = () => {
+const Frase = (props) => {
   return (
     <Card className="my-4">
       <Card.Body>
         <div className="row">
           <div className="col-sm-12 col-md-4">
-            <img src="" alt="" />
+            <img src={props.personaje.image} alt={props.personaje.character} />
           </div>
           <div className="col-sm-12 col-md-8">
-            <Card.Title>Personaje</Card.Title>
+            <Card.Title>{props.personaje.character}</Card.Title>
             <Card.Text>
-              Random phrase
+              {props.personaje.quote}
             </Card.Text>
           </div>
         </div>
