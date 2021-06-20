@@ -32,7 +32,7 @@ const mostrarComponente = (spinnerValue === true) ? <Spinner></Spinner> : <Frase
             className="w-50"
           />
         </figure>
-        <Button variant="warning" onClick={ () => consultarApi()}>Obtener frase</Button>
+        <Button variant="outline-dark size-lg" onClick={ () => consultarApi()}>Get Phrase</Button>
         {mostrarComponente}
     </section>
   );
